@@ -11,7 +11,7 @@
 			font-family: Arial, Helvetica, sans-serif;
 		}
 		.virus{
-			width: 500px;
+			width: 600px;
 		}
 		a{
 			color: #FFFFFF;
@@ -45,6 +45,45 @@
 			height: 80px;
 			padding-top: 20px;
 		}
+
+		#content{
+			display: inline-block;
+			width: 100%;
+		}
+		#content #right{
+			float: right;
+		}
+		#content #left{
+			float: left;
+		}
+		.texto-grande{
+			font-size: 9em;
+			text-transform: uppercase;
+			color: #FFFFB7;
+			margin: 0;
+			padding: 0;
+		}
+		#page{
+			width: 70%;
+			margin: auto;
+			border: 1px solid #FFFFFF;
+			padding: 50px;
+		}
+		.hastag{
+			font-size: 40px;
+			text-align: center;
+			text-transform: uppercase;
+			font-weight: bold;
+			color: #FFDD88;
+		}
+		.link{
+			font-size: 35px;
+			font-weight: bold;
+			text-decoration: none;
+		}
+		.link:hover{
+			color: aquamarine;
+		}
 	</style>
 </head>
 <body>
@@ -68,13 +107,13 @@
 			</ul>
 		</nav>
 		<div id="content">
-			<div id="right">
-				<h1>Cuarentena</h1>
-				<a href="#">Clic para mayor información</a>
-			</div>
 			<div id="left">
+				<h1 class="texto-grande">Cua<br>ren<br>tena</h1>
+				<a class="link" href="#">Clic para mayor información</a>
+			</div>
+			<div id="right">
 				<img class="virus"src="images/virus.png">
-				<p>#Yomequedoencasa</p>
+				<p class="hastag">#Yomequedoencasa</p>
 			</div>
 		</div>
 	</div>
